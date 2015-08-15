@@ -2,10 +2,11 @@
   "use strict";
 
   var inNodeJS = false;
-  if (typeof module !== 'undefined' && module.exports) {
-    inNodeJS = true;
-    var request = require('request');
-  }
+  // TODO - Better test between webpack and nodejs usage
+  //if (typeof module !== 'undefined' && module.exports) {
+    //inNodeJS = true;
+    //var request = require('request');
+  //}
 
   var supportsCORS = false;
   var inLegacyIE = false;
